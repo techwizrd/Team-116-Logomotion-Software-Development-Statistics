@@ -60,15 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> { <br/>
-&nbsp;&nbsp;<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a9b38aebd828fd818ff59ef8ba75de4b9">SUCK_IN</a>, 
-<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242ab295f3ae6ddd8673651cadfff257f5cf">SPIT_OUT</a>, 
-<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242af492f6e420e5d4dc81a71b51cc69a85c">MANUAL_ARM</a>, 
-<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a38ddabaa19d20e9cd29fb04530016332">SAFE_DEPLOY</a>, 
-<br/>
-&nbsp;&nbsp;<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a52de24d147e5fb8ed950cab5d3aee701">MANUAL_DEPLOY</a>
-<br/>
- }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a> { <a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fa0ca23cf79fd9b3ce156bcaadddbe9655">LEFT_SIDE</a>, 
 <a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fab843f493d35c8f4411d9826ce74de3c2">RIGHT_SIDE</a>
  }</td></tr>
@@ -95,54 +86,22 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4480e8d757cce850e8136a1c05f07a2"></a><!-- doxytag: member="DS::DS" ref="ad4480e8d757cce850e8136a1c05f07a2" args="(Log *log, Mobility *mobility, EndEffector *end_effector, MinibotDeployment *minibot_deployment, Autonomous *autonomous)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>DS</b> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classMobility.html">Mobility</a> *mobility, <a class="el" href="classEndEffector.html">EndEffector</a> *end_effector, <a class="el" href="classMinibotDeployment.html">MinibotDeployment</a> *minibot_deployment, <a class="el" href="classAutonomous.html">Autonomous</a> *autonomous)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a79f7ea1314fbf3a9607e511ac1ee7c2e">get_joystick_speed</a> (<a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a> side)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a5fb1ffe74911fb84aba9f767e17be70b">get_tube_rotate_speed</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a318b811c4f7575794c833d3946edc871">is_manual_arm_selected</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a2a331376838d1fa5962b9bfa1d59615b">is_suck_in_pressed</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a04267a53c337fad8e5352a82552a4cad">is_spit_out_pressed</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a76e2d4ab25b49aa8561f61b9b889e144">is_safe_deploy_button</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a67ddccaa031e7eecda7e3dc9d5bf5f7f">is_manual_deploy_button</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ac9df295cb41fd12275658675843c61bc">set_aligned_status</a> (bool is_aligned)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a863513abcbc63020e9aa71dc0b9c8986">set_deployment_time_status</a> (bool status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#aab26db96a42d3800eb4f1389c8e82b7e">get_tube_suck_spit_speed</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a331cfc63fac9c01bcadd49e3ce6f1014">is_safe_deploy_button</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a91e082c25e02c2e64debb0be78b7a93c">is_manual_deploy_button</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a636e646c9036673f1cdf3e0c1e39caa8">set_has_tube_status</a> (bool has_tube)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a7442fd88c54beeb4381cf50f8f458156">set_danger_status</a> (bool danger, <a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019">RobotPartType</a> part)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a863513abcbc63020e9aa71dc0b9c8986">set_deployment_time_status</a> (bool status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ac9df295cb41fd12275658675843c61bc">set_aligned_status</a> (bool is_aligned)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a8f543a00274b1e05372ed77989487388">execute_macro</a> (<a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093">Macro</a> macro)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a7442fd88c54beeb4381cf50f8f458156">set_danger_status</a> (bool danger, <a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019">RobotPartType</a> part)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The Driver Station subsysten of the robot interfaces Operator Interface to allow drivers to control the robot and let the robot display notifications to the driver </p>
 <hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="ad35a11905e27b014c2b4159b12d51242"></a><!-- doxytag: member="DS::ButtonType" ref="ad35a11905e27b014c2b4159b12d51242" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">DS::ButtonType</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="ad35a11905e27b014c2b4159b12d51242a9b38aebd828fd818ff59ef8ba75de4b9"></a><!-- doxytag: member="SUCK_IN" ref="ad35a11905e27b014c2b4159b12d51242a9b38aebd828fd818ff59ef8ba75de4b9" args="" -->SUCK_IN</em>&nbsp;</td><td>
-<p>Suck In Button </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad35a11905e27b014c2b4159b12d51242ab295f3ae6ddd8673651cadfff257f5cf"></a><!-- doxytag: member="SPIT_OUT" ref="ad35a11905e27b014c2b4159b12d51242ab295f3ae6ddd8673651cadfff257f5cf" args="" -->SPIT_OUT</em>&nbsp;</td><td>
-<p>Spit Out Button </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad35a11905e27b014c2b4159b12d51242af492f6e420e5d4dc81a71b51cc69a85c"></a><!-- doxytag: member="MANUAL_ARM" ref="ad35a11905e27b014c2b4159b12d51242af492f6e420e5d4dc81a71b51cc69a85c" args="" -->MANUAL_ARM</em>&nbsp;</td><td>
-<p>Manual Arm Control Button </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad35a11905e27b014c2b4159b12d51242a38ddabaa19d20e9cd29fb04530016332"></a><!-- doxytag: member="SAFE_DEPLOY" ref="ad35a11905e27b014c2b4159b12d51242a38ddabaa19d20e9cd29fb04530016332" args="" -->SAFE_DEPLOY</em>&nbsp;</td><td>
-<p>Minibot Safe Deploy Button </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad35a11905e27b014c2b4159b12d51242a52de24d147e5fb8ed950cab5d3aee701"></a><!-- doxytag: member="MANUAL_DEPLOY" ref="ad35a11905e27b014c2b4159b12d51242a52de24d147e5fb8ed950cab5d3aee701" args="" -->MANUAL_DEPLOY</em>&nbsp;</td><td>
-<p>Minibot Manual Deploy Button </p>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a58cd5b95efdfaf51e82d22a58628cc5f"></a><!-- doxytag: member="DS::JoystickSideType" ref="a58cd5b95efdfaf51e82d22a58628cc5f" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -310,35 +269,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a318b811c4f7575794c833d3946edc871"></a><!-- doxytag: member="DS::is_manual_arm_selected" ref="a318b811c4f7575794c833d3946edc871" args="(ButtonType channel)" -->
+<a class="anchor" id="aab26db96a42d3800eb4f1389c8e82b7e"></a><!-- doxytag: member="DS::get_tube_suck_spit_speed" ref="aab26db96a42d3800eb4f1389c8e82b7e" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DS::is_manual_arm_selected </td>
+          <td class="memname">float DS::get_tube_suck_spit_speed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns whether the manual arm control button has been pressed</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true the manual arm control button has been pressed </dd></dl>
+<p>Get the speed the tube is to be sucked in or spit out from a joystick </p>
 
 </div>
 </div>
-<a class="anchor" id="a67ddccaa031e7eecda7e3dc9d5bf5f7f"></a><!-- doxytag: member="DS::is_manual_deploy_button" ref="a67ddccaa031e7eecda7e3dc9d5bf5f7f" args="(ButtonType channel)" -->
+<a class="anchor" id="a91e082c25e02c2e64debb0be78b7a93c"></a><!-- doxytag: member="DS::is_manual_deploy_button" ref="a91e082c25e02c2e64debb0be78b7a93c" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool DS::is_manual_deploy_button </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -350,15 +306,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76e2d4ab25b49aa8561f61b9b889e144"></a><!-- doxytag: member="DS::is_safe_deploy_button" ref="a76e2d4ab25b49aa8561f61b9b889e144" args="(ButtonType channel)" -->
+<a class="anchor" id="a331cfc63fac9c01bcadd49e3ce6f1014"></a><!-- doxytag: member="DS::is_safe_deploy_button" ref="a331cfc63fac9c01bcadd49e3ce6f1014" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool DS::is_safe_deploy_button </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -367,46 +322,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Returns whether the safe deploy button has been pressed</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the safe deploy button has been pressed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a04267a53c337fad8e5352a82552a4cad"></a><!-- doxytag: member="DS::is_spit_out_pressed" ref="a04267a53c337fad8e5352a82552a4cad" args="(ButtonType channel)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DS::is_spit_out_pressed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns whether or not the driver pressed the spit out button</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the spit out button has been pressed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2a331376838d1fa5962b9bfa1d59615b"></a><!-- doxytag: member="DS::is_suck_in_pressed" ref="a2a331376838d1fa5962b9bfa1d59615b" args="(ButtonType channel)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DS::is_suck_in_pressed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns whether suck in button has been pressed</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the suck in button has been pressed </dd></dl>
 
 </div>
 </div>
@@ -539,7 +454,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 22:27:06 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Feb 9 2011 16:36:47 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

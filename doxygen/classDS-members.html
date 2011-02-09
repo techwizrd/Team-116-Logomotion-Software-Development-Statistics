@@ -51,8 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 This is the complete list of members for <a class="el" href="classDS.html">DS</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> enum name</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>DS</b>() (defined in <a class="el" href="classDS.html">DS</a>)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>DS</b>(Log *log, Mobility *mobility, EndEffector *end_effector, MinibotDeployment *minibot_deployment, Autonomous *autonomous) (defined in <a class="el" href="classDS.html">DS</a>)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a90eb8e76cbcd0578affa1b8d7a120405">ELEVATOR</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a8f543a00274b1e05372ed77989487388">execute_macro</a>(Macro macro)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093ae6d12860c0b1625ea44547fe72f8f61b">FIVE</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
@@ -61,31 +60,24 @@ This is the complete list of members for <a class="el" href="classDS.html">DS</a
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a7e56cb92044721be09be4cab8cc3364b">GENERAL</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a79f7ea1314fbf3a9607e511ac1ee7c2e">get_joystick_speed</a>(JoystickSideType side)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5fb1ffe74911fb84aba9f767e17be70b">get_tube_rotate_speed</a>()</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classDS.html#aab26db96a42d3800eb4f1389c8e82b7e">get_tube_suck_spit_speed</a>()</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a07743f08d896ec122e1e77d570d0923e">GRABBER_ARM</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a6c93cbb2178f9d1e663d448e68988624">GRABBER_ROLLER</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#a318b811c4f7575794c833d3946edc871">is_manual_arm_selected</a>(ButtonType channel)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#a67ddccaa031e7eecda7e3dc9d5bf5f7f">is_manual_deploy_button</a>(ButtonType channel)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#a76e2d4ab25b49aa8561f61b9b889e144">is_safe_deploy_button</a>(ButtonType channel)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#a04267a53c337fad8e5352a82552a4cad">is_spit_out_pressed</a>(ButtonType channel)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#a2a331376838d1fa5962b9bfa1d59615b">is_suck_in_pressed</a>(ButtonType channel)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classDS.html#a91e082c25e02c2e64debb0be78b7a93c">is_manual_deploy_button</a>()</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classDS.html#a331cfc63fac9c01bcadd49e3ce6f1014">is_safe_deploy_button</a>()</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a> enum name</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fa0ca23cf79fd9b3ce156bcaadddbe9655">LEFT_SIDE</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093">Macro</a> enum name</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242af492f6e420e5d4dc81a71b51cc69a85c">MANUAL_ARM</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a52de24d147e5fb8ed950cab5d3aee701">MANUAL_DEPLOY</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a578ddcec7182b70eb283fa37ce9de44b">MINIBOT_DEPLOYMENT</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019afc0eeddad365bb97333982b0e86ba9b5">MOBILITY</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093aec87d9ee590221a53f99529d9553d408">ONE</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fab843f493d35c8f4411d9826ce74de3c2">RIGHT_SIDE</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019">RobotPartType</a> enum name</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a38ddabaa19d20e9cd29fb04530016332">SAFE_DEPLOY</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ac9df295cb41fd12275658675843c61bc">set_aligned_status</a>(bool is_aligned)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a7442fd88c54beeb4381cf50f8f458156">set_danger_status</a>(bool danger, RobotPartType part)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a863513abcbc63020e9aa71dc0b9c8986">set_deployment_time_status</a>(bool status)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#a636e646c9036673f1cdf3e0c1e39caa8">set_has_tube_status</a>(bool has_tube)</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093a08c406a3d6107088ea709d94698d7616">SIX</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242ab295f3ae6ddd8673651cadfff257f5cf">SPIT_OUT</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242a9b38aebd828fd818ff59ef8ba75de4b9">SUCK_IN</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093a9b0e248710356787cb0f0b23d904d53f">THREE</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classDS.html#ad416e6488e9d207b8735fc50cb54c093af3618578cea5f310f9a029d1eec23159">TWO</a> enum value</td><td><a class="el" href="classDS.html">DS</a></td><td></td></tr>
 </table></div>
@@ -103,7 +95,7 @@ This is the complete list of members for <a class="el" href="classDS.html">DS</a
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 22:27:06 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Feb 9 2011 16:36:47 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

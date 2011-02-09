@@ -100,8 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a318b811c4f7575794c833d3946edc871">is_manual_arm_selected</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a2a331376838d1fa5962b9bfa1d59615b">is_suck_in_pressed</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a04267a53c337fad8e5352a82552a4cad">is_spit_out_pressed</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ab3e4ab6e6951d6208e97472c216627af">get_safe_deploy</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#aa4e8ee503de4f2c2277a0be7d6db0cad">get_manual_deploy</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a76e2d4ab25b49aa8561f61b9b889e144">is_safe_deploy_button</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a67ddccaa031e7eecda7e3dc9d5bf5f7f">is_manual_deploy_button</a> (<a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a> channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ac9df295cb41fd12275658675843c61bc">set_aligned_status</a> (bool is_aligned)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a863513abcbc63020e9aa71dc0b9c8986">set_deployment_time_status</a> (bool status)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a636e646c9036673f1cdf3e0c1e39caa8">set_has_tube_status</a> (bool has_tube)</td></tr>
@@ -291,46 +291,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa4e8ee503de4f2c2277a0be7d6db0cad"></a><!-- doxytag: member="DS::get_manual_deploy" ref="aa4e8ee503de4f2c2277a0be7d6db0cad" args="(ButtonType channel)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DS::get_manual_deploy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns if the manual deploy button for the minibot has been pressed</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the manual deploy button has been pressed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab3e4ab6e6951d6208e97472c216627af"></a><!-- doxytag: member="DS::get_safe_deploy" ref="ab3e4ab6e6951d6208e97472c216627af" args="(ButtonType channel)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DS::get_safe_deploy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
-          <td class="paramname"> <em>channel</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns whether the safe deploy button has been pressed</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the safe deploy button has been pressed </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a5fb1ffe74911fb84aba9f767e17be70b"></a><!-- doxytag: member="DS::get_tube_rotate_speed" ref="a5fb1ffe74911fb84aba9f767e17be70b" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -367,6 +327,46 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Returns whether the manual arm control button has been pressed</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns true the manual arm control button has been pressed </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a67ddccaa031e7eecda7e3dc9d5bf5f7f"></a><!-- doxytag: member="DS::is_manual_deploy_button" ref="a67ddccaa031e7eecda7e3dc9d5bf5f7f" args="(ButtonType channel)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DS::is_manual_deploy_button </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
+          <td class="paramname"> <em>channel</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns if the manual deploy button for the minibot has been pressed</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the manual deploy button has been pressed </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76e2d4ab25b49aa8561f61b9b889e144"></a><!-- doxytag: member="DS::is_safe_deploy_button" ref="a76e2d4ab25b49aa8561f61b9b889e144" args="(ButtonType channel)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DS::is_safe_deploy_button </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDS.html#ad35a11905e27b014c2b4159b12d51242">ButtonType</a>&nbsp;</td>
+          <td class="paramname"> <em>channel</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns whether the safe deploy button has been pressed</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the safe deploy button has been pressed </dd></dl>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 00:05:01 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 22:27:06 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

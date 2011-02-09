@@ -48,7 +48,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <h1>Mobility Class Reference</h1>  </div>
 </div>
@@ -71,6 +72,18 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a0deb725d94071bce58b2b7a05bfe34ce">get_motor_speed</a> (<a class="el" href="classMobility.html#a67620cb00aa4af5b1203d508a1b137d9">RobotSideType</a> side)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#ad181fc5f0aa771b3baf84cb859bc0eb0">shift_to_low_gear</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a5df64a6f95baf53a486698a8934e9105">shift_to_high_gear</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a54bd0d773bfbb70aa3822b61674cd325">is_in_low_gear</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CANJaguar *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#aeea9dacbb0b474a7dc87aa72dd93e067">get_motor_controller_instance</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057a583dc52554545347be0374127959"></a><!-- doxytag: member="Mobility::MOTOR_RPM" ref="a057a583dc52554545347be0374127959" args="" -->
+static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>MOTOR_RPM</b> = 5000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfda5fc5ab1b4cb826cd53debbf24b77"></a><!-- doxytag: member="Mobility::HIGH_GEAR_REDUCTION" ref="adfda5fc5ab1b4cb826cd53debbf24b77" args="" -->
+static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>HIGH_GEAR_REDUCTION</b> = 9.6</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b76b8100df483a9286c9ea58707ab47"></a><!-- doxytag: member="Mobility::LOW_GEAR_REDUCTION" ref="a5b76b8100df483a9286c9ea58707ab47" args="" -->
+static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>LOW_GEAR_REDUCTION</b> = 24</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8991c45aa97e86550c5e176647b261"></a><!-- doxytag: member="Mobility::GEAR_CHANGE_SPEED" ref="ade8991c45aa97e86550c5e176647b261" args="" -->
+static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>GEAR_CHANGE_SPEED</b> = (24 / 9.6)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The <a class="el" href="classMobility.html">Mobility</a> subsytem of the robot allows for low level control over the motor controllers mounted on the robot.</p>
@@ -124,6 +137,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aeea9dacbb0b474a7dc87aa72dd93e067"></a><!-- doxytag: member="Mobility::get_motor_controller_instance" ref="aeea9dacbb0b474a7dc87aa72dd93e067" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CANJaguar * Mobility::get_motor_controller_instance </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets the instance of the CANJaguar motor controller</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns a pointer to one of the CANJaguars </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0deb725d94071bce58b2b7a05bfe34ce"></a><!-- doxytag: member="Mobility::get_motor_speed" ref="a0deb725d94071bce58b2b7a05bfe34ce" args="(RobotSideType side)" -->
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +179,25 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Speed value between -1.0 and 1.0 for the given side </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54bd0d773bfbb70aa3822b61674cd325"></a><!-- doxytag: member="Mobility::is_in_low_gear" ref="a54bd0d773bfbb70aa3822b61674cd325" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mobility::is_in_low_gear </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets whether the <a class="el" href="classMobility.html">Mobility</a> system is in low gear.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the <a class="el" href="classMobility.html">Mobility</a> system is in low gear </dd></dl>
 
 </div>
 </div>
@@ -240,7 +291,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 00:05:01 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 8 2011 22:27:06 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

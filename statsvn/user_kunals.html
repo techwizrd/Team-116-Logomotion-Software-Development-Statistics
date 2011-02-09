@@ -16,11 +16,11 @@
     <dt>Login name:</dt>
     <dd>kunals</dd>
     <dt>Total Commits:</dt>
-    <dd>147 (58.6%)</dd>
+    <dd>166 (61.5%)</dd>
     <dt>Lines of Code:</dt>
-    <dd>1,271 (41.0%)</dd>
+    <dd>1,756 (49.0%)</dd>
     <dt>Most Recent Commit:</dt>
-    <dd><span class="date">2011-02-08 21:53</span></dd>
+    <dd><span class="date">2011-02-09 16:30</span></dd>
 </dl>
 
 <div class="section">
@@ -44,9 +44,9 @@
     <tbody>
       <tr  class="odd">
         <th><a href="dir.html" class="directory">/</a></th>
-        <td>147 (100.0%)</td>
-        <td>1271 (100.0%)</td>
-        <td>8.6</td>
+        <td>166 (100.0%)</td>
+        <td>1756 (100.0%)</td>
+        <td>10.5</td>
       </tr>
     </tbody>
   </table>
@@ -56,6 +56,73 @@
 <h2>Most Recent Commits</h2>
 <dl class="commitlist">
   <dt><a name="20"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-09 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">228</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clarified a few comments and converted tabs to spaces.
+    </p>
+    <p class="commitdetails"><strong>330</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Autonomous.h&#160;<span class="change">(+15&#160;-15)</span>,
+        DS.cpp&#160;<span class="change">(+39&#160;-39)</span>,
+        DS.h&#160;<span class="change">(+3&#160;-3)</span>,
+        Elevator.cpp&#160;<span class="change">(+97&#160;-99)</span>,
+        EndEffector.cpp&#160;<span class="change">(+60&#160;-60)</span>,
+        Grabber.cpp&#160;<span class="change">(+4&#160;-4)</span>,
+        IO.h&#160;<span class="change">(+4&#160;-4)</span>,
+        Log.cpp&#160;<span class="change">(+14&#160;-14)</span>,
+        Log.h&#160;<span class="change">(+31&#160;-31)</span>,
+        MinibotDeployment.cpp&#160;<span class="change">(+8&#160;-8)</span>,
+        Mobility.cpp&#160;<span class="change">(+10&#160;-10)</span>,
+        Mobility.h&#160;<span class="change">(+8&#160;-8)</span>,
+        Navigation.cpp&#160;<span class="change">(+16&#160;-15)</span>,
+        Navigation.h&#160;<span class="change">(+9&#160;-9)</span>,
+        Robot.cpp&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-09 16:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">227</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Rewrote portions of Driver Station code and added DS::process() and DS::process_mobility() for when we eventually add the tasking code.
+    </p>
+    <p class="commitdetails"><strong>143</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+68&#160;-125)</span>,
+        DS.h&#160;<span class="change">(+75&#160;-75)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-09 15:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">226</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed Autonomous declaration to match Hardware Pinout update
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        IO.h&#160;<span class="change">(+5)</span>,
+        Robot.cpp&#160;<span class="change">(+7&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-08 21:53</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">225</span></span>
@@ -74,7 +141,7 @@ Fixed other build errors in Mobility and Navigation
     </ul>
   </dd>
 
-  <dt><a name="19"></a>
+  <dt><a name="16"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-08 19:48</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">213</span></span>
@@ -92,7 +159,7 @@ Added Mobility::get_motor_controller_instance() because Navigation wants to coun
     </ul>
   </dd>
 
-  <dt><a name="18"></a>
+  <dt><a name="15"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-08 19:30</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">212</span></span>
@@ -109,7 +176,7 @@ Added newline to end of EndEffector.cpp so it wouldn't throw a warning
     </ul>
   </dd>
 
-  <dt><a name="17"></a>
+  <dt><a name="14"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-08 19:29</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">211</span></span>
@@ -127,7 +194,7 @@ Added Mobility::is_in_low_gear() so we can tell what gear we are in.
     </ul>
   </dd>
 
-  <dt><a name="16"></a>
+  <dt><a name="13"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-08 00:01</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">208</span></span>
@@ -144,7 +211,7 @@ Added constant for gear change speed (in percent velocity) to Mobility.
     </ul>
   </dd>
 
-  <dt><a name="15"></a>
+  <dt><a name="12"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 23:49</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">207</span></span>
@@ -164,7 +231,7 @@ Fixed build errors in MinibotDeployment
     </ul>
   </dd>
 
-  <dt><a name="14"></a>
+  <dt><a name="11"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 20:46</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">203</span></span>
@@ -181,7 +248,7 @@ Fixed misspelling of allignment to alignment
     </ul>
   </dd>
 
-  <dt><a name="13"></a>
+  <dt><a name="10"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 20:16</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">200</span></span>
@@ -200,7 +267,7 @@ Fixed a few build errors and spelling mistakes. Added correct channels for the o
     </ul>
   </dd>
 
-  <dt><a name="12"></a>
+  <dt><a name="9"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 18:41</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">198</span></span>
@@ -218,7 +285,7 @@ Changed minibot deployment solenoids to a Piston instance
     </ul>
   </dd>
 
-  <dt><a name="11"></a>
+  <dt><a name="8"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 17:35</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">197</span></span>
@@ -235,7 +302,7 @@ Added Autonomous header file containing Autonomous constructor
     </ul>
   </dd>
 
-  <dt><a name="10"></a>
+  <dt><a name="7"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-07 17:32</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">196</span></span>
@@ -252,7 +319,7 @@ Added Autonomous declaration. Note, no autonomous code is present yet.
     </ul>
   </dd>
 
-  <dt><a name="9"></a>
+  <dt><a name="6"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 19:30</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">195</span></span>
@@ -275,7 +342,7 @@ Added some logging statements
     </ul>
   </dd>
 
-  <dt><a name="8"></a>
+  <dt><a name="5"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 18:35</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">194</span></span>
@@ -292,7 +359,7 @@ Fixed declaration of MAXIMUM_DEBUG_LEVEL
     </ul>
   </dd>
 
-  <dt><a name="7"></a>
+  <dt><a name="4"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 18:25</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">193</span></span>
@@ -310,7 +377,7 @@ Added comments and debug level checking to Log::write()
     </ul>
   </dd>
 
-  <dt><a name="6"></a>
+  <dt><a name="3"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 18:14</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">192</span></span>
@@ -339,7 +406,7 @@ Added a logging class for logging important information, warnings, and errors.
     </ul>
   </dd>
 
-  <dt><a name="5"></a>
+  <dt><a name="2"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 15:40</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">190</span></span>
@@ -358,7 +425,7 @@ Added some logging code to Mobility
     </ul>
   </dd>
 
-  <dt><a name="4"></a>
+  <dt><a name="1"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-05 15:35</span>
     <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">189</span></span>
@@ -375,67 +442,9 @@ Added declaration for Log in Robot.cpp
     </ul>
   </dd>
 
-  <dt><a name="3"></a>
-    <a href="user_kunals.html" class="author">kunals</a>
-    <span class="date">2011-02-05 15:18</span>
-    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">187</span></span>
-  </dt>
-  <dd>
-    <p class="comment">
-Deleted some out of date comments in Grabber
-    </p>
-    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
-    <ul class="commitdetails">
-      <li>
-        EndEffector.cpp&#160;<span class="change">(-1)</span>,
-        Grabber.h&#160;<span class="change">(-1)</span>
-      </li>
-    </ul>
-  </dd>
-
-  <dt><a name="2"></a>
-    <a href="user_kunals.html" class="author">kunals</a>
-    <span class="date">2011-02-05 15:16</span>
-    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">186</span></span>
-  </dt>
-  <dd>
-    <p class="comment">
-Fixed a few errors in EndEffector
-    </p>
-    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
-    <ul class="commitdetails">
-      <li>
-        EndEffector.cpp&#160;<span class="change">(+4&#160;-4)</span>,
-        EndEffector.h&#160;<span class="change">(+8&#160;-3)</span>
-      </li>
-    </ul>
-  </dd>
-
-  <dt><a name="1"></a>
-    <a href="user_kunals.html" class="author">kunals</a>
-    <span class="date">2011-02-05 15:04</span>
-    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">185</span></span>
-  </dt>
-  <dd>
-    <p class="comment">
-Changed all occurrences of :TODO: to @todo so Doxygen will pick them up
-    </p>
-    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">6 files</span>:</p>
-    <ul class="commitdetails">
-      <li>
-        DS.cpp&#160;<span class="change">(+1&#160;-1)</span>,
-        Elevator.cpp&#160;<span class="change">(+2&#160;-2)</span>,
-        Grabber.cpp&#160;<span class="change">(+1&#160;-1)</span>,
-        Grabber.h&#160;<span class="change">(+1&#160;-1)</span>,
-        MinibotDeployment.cpp&#160;<span class="change">(+1&#160;-1)</span>,
-        Mobility.cpp&#160;<span class="change">(+3&#160;-3)</span>
-      </li>
-    </ul>
-  </dd>
-
 </dl>
 
-<p>(39 more)</p>
+<p>(42 more)</p>
 </div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
 </body>
 </html>

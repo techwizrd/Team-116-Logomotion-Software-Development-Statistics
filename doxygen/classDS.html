@@ -60,9 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a> { <a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fa0ca23cf79fd9b3ce156bcaadddbe9655">LEFT_SIDE</a>, 
-<a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5fab843f493d35c8f4411d9826ce74de3c2">RIGHT_SIDE</a>
- }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019">RobotPartType</a> { <br/>
 &nbsp;&nbsp;<a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a90eb8e76cbcd0578affa1b8d7a120405">ELEVATOR</a>, 
 <a class="el" href="classDS.html#a5f39d0457621c7260c62109f26a4d019a6c93cbb2178f9d1e663d448e68988624">GRABBER_ROLLER</a>, 
@@ -78,7 +75,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4480e8d757cce850e8136a1c05f07a2"></a><!-- doxytag: member="DS::DS" ref="ad4480e8d757cce850e8136a1c05f07a2" args="(Log *log, Mobility *mobility, EndEffector *end_effector, MinibotDeployment *minibot_deployment, Autonomous *autonomous)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DS</b> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classMobility.html">Mobility</a> *mobility, <a class="el" href="classEndEffector.html">EndEffector</a> *end_effector, <a class="el" href="classMinibotDeployment.html">MinibotDeployment</a> *minibot_deployment, <a class="el" href="classAutonomous.html">Autonomous</a> *autonomous)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a79f7ea1314fbf3a9607e511ac1ee7c2e">get_joystick_speed</a> (<a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a> side)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a5fb1ffe74911fb84aba9f767e17be70b">get_tube_rotate_speed</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#aab26db96a42d3800eb4f1389c8e82b7e">get_tube_suck_spit_speed</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a331cfc63fac9c01bcadd49e3ce6f1014">is_safe_deploy_button</a> ()</td></tr>
@@ -92,29 +88,6 @@ Public Member Functions</h2></td></tr>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The Driver Station subsysten of the robot interfaces Operator Interface to allow drivers to control the robot and let the robot display notifications to the driver </p>
 <hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="a58cd5b95efdfaf51e82d22a58628cc5f"></a><!-- doxytag: member="DS::JoystickSideType" ref="a58cd5b95efdfaf51e82d22a58628cc5f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">DS::JoystickSideType</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a58cd5b95efdfaf51e82d22a58628cc5fa0ca23cf79fd9b3ce156bcaadddbe9655"></a><!-- doxytag: member="LEFT_SIDE" ref="a58cd5b95efdfaf51e82d22a58628cc5fa0ca23cf79fd9b3ce156bcaadddbe9655" args="" -->LEFT_SIDE</em>&nbsp;</td><td>
-<p>Left Joystick </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a58cd5b95efdfaf51e82d22a58628cc5fab843f493d35c8f4411d9826ce74de3c2"></a><!-- doxytag: member="RIGHT_SIDE" ref="a58cd5b95efdfaf51e82d22a58628cc5fab843f493d35c8f4411d9826ce74de3c2" args="" -->RIGHT_SIDE</em>&nbsp;</td><td>
-<p>Right Joystick </p>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a5f39d0457621c7260c62109f26a4d019"></a><!-- doxytag: member="DS::RobotPartType" ref="a5f39d0457621c7260c62109f26a4d019" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -176,32 +149,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a79f7ea1314fbf3a9607e511ac1ee7c2e"></a><!-- doxytag: member="DS::get_joystick_speed" ref="a79f7ea1314fbf3a9607e511ac1ee7c2e" args="(JoystickSideType side)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float DS::get_joystick_speed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDS.html#a58cd5b95efdfaf51e82d22a58628cc5f">JoystickSideType</a>&nbsp;</td>
-          <td class="paramname"> <em>side</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Gets how far the joystick is pushed/pulled</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>side</em>&nbsp;</td><td>Joystick to read speed from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Speed value between -1.0 and 1.0 </dd></dl>
 
 </div>
 </div>
@@ -294,14 +241,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Alerts driver if driver is performing a potentially dangerous action</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>danger</em>&nbsp;</td><td>sets to true if something is in danger </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>part</em>&nbsp;</td><td>which part of the robot is in danger </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Called continuously to examine driver station inputs. REVISIT: Usually driver station inputs are periodic not continuous, other code is adjusting values continuously. </p>
 
 </div>
 </div>
@@ -399,7 +339,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Feb 10 2011 22:19:48 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Feb 12 2011 22:12:56 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

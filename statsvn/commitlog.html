@@ -21,11 +21,164 @@
 </ul>
 </div><dl class="attributes">
     <dt>Number of Commits:</dt>
-    <dd>144</dd>
+    <dd>152</dd>
     <dt>Number of Active Developers:</dt>
     <dd>10</dd>
 </dl>
 <dl class="commitlist">
+  <dt><a name="152"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-15 01:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#152">#152</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">287</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added code to DS::process() to call Autonomous macros through DS::execute_macro() function
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+7&#160;-1)</span>,
+        DS.h&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="151"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-15 01:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#151">#151</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">286</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Wrote DS::process_end_effector() function<br />
+<br />
+A lot of changes need to be made to files so that DS::process_end_effector() could be written. I added IO constants for the Elevator button. Added a bunch of todos in the DS::process_end_effector() function asking for more information to confirm whether the right actions are being taken on the right inputs. Added a Grabber pointer to the DS constructor. Added comments for EndEffector::spin_rollers(). Added commented code DS::execute_macro() that can be uncommented when the Autonomous interface is complete.
+    </p>
+    <p class="commitdetails"><strong>68</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+50&#160;-12)</span>,
+        DS.h&#160;<span class="change">(+2&#160;-1)</span>,
+        EndEffector.h&#160;<span class="change">(+7)</span>,
+        IO.h&#160;<span class="change">(+8&#160;-6)</span>,
+        Robot.cpp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="150"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-15 00:20</span>
+    <a class="permalink" title="Permalink to this commit" href="#150">#150</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">285</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Log constructor and destructor now writes a timestamp to the file for easier tracking
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Log.cpp&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="149"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-14 23:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#149">#149</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">284</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed build errors in MinibotDeployment.cpp and added checks in MinibotDeployment::deploy_minibot() to make sure the alignment system is deployed and that we release the stabilization system prior to deploying the actual minibot
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        MinibotDeployment.cpp&#160;<span class="change">(+12&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="148"></a>
+    <a href="user_spencera.html" class="author">spencera</a>
+    <span class="date">2011-02-14 21:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#148">#148</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">283</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor code changes
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+15&#160;-6)</span>,
+        EndEffector.cpp&#160;<span class="change">(+5)</span>,
+        EndEffector.h&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="147"></a>
+    <a href="user_justina.html" class="author">justina</a>
+    <span class="date">2011-02-14 21:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#147">#147</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">282</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+made it so that deploying the minibot gets rid of the stabilization system
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        MinibotDeployment.cpp&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="146"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-14 19:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#146">#146</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">280</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed build errors in DS.cpp
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="145"></a>
+    <a href="user_alicem.html" class="author">alicem</a>
+    <span class="date">2011-02-14 19:02</span>
+    <a class="permalink" title="Permalink to this commit" href="#145">#145</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">279</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+worked on get_tube_suck_spit_speed
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
   <dt><a name="144"></a>
     <a href="user_alicem.html" class="author">alicem</a>
     <span class="date">2011-02-13 19:21</span>

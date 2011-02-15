@@ -75,11 +75,11 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#ad7fcde4c3a9b1dd69726287dfac4a4f5">EndEffector</a> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classElevator.html">Elevator</a> *elevator, <a class="el" href="classGrabber.html">Grabber</a> *grabber)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#a7600ecd82c0c61627cb2794597edadc8">set_position</a> (<a class="el" href="classEndEffector.html#ab2d6d3e52662e1201f296853f3bdd9a8">EndEffectorPositionType</a> position)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEndEffector.html#ab2d6d3e52662e1201f296853f3bdd9a8">EndEffectorPositionType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#a5ff1977e7cbd1bc2671fd9d95d918526">get_position</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#a04377293f5ca1af3b0427767acce415e">rotate_tube</a> (float speed)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#aa6c18533fc7314438b18a2597caa9885">suck_tube_in</a> (double timeout, bool use_grabber_limit_switch)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#a0e4f18f01daaa7f0d0cadfa5c75c2ff6">spit_tube_out</a> (double timeout)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1d770f32d7ce70df82702f78c59bbb8"></a><!-- doxytag: member="EndEffector::spin_rollers" ref="ab1d770f32d7ce70df82702f78c59bbb8" args="(double spin_spit_speed, double rotate_speed)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>spin_rollers</b> (double spin_spit_speed, double rotate_speed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEndEffector.html#ab1d770f32d7ce70df82702f78c59bbb8">spin_rollers</a> (double spin_spit_speed, double rotate_speed)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The End Effector class provides methods for picking up and manipulating game pieces and scoring them the scoring racks </p>
@@ -159,6 +159,25 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>spin_rollers</b> (dou
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a5ff1977e7cbd1bc2671fd9d95d918526"></a><!-- doxytag: member="EndEffector::get_position" ref="a5ff1977e7cbd1bc2671fd9d95d918526" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEndEffector.html#ab2d6d3e52662e1201f296853f3bdd9a8">EndEffector::EndEffectorPositionType</a> EndEffector::get_position </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the current position of the end effector.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the current position of the end effector. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a04377293f5ca1af3b0427767acce415e"></a><!-- doxytag: member="EndEffector::rotate_tube" ref="a04377293f5ca1af3b0427767acce415e" args="(float speed)" -->
 <div class="memitem">
 <div class="memproto">
@@ -203,6 +222,41 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>spin_rollers</b> (dou
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>position</em>&nbsp;</td><td>End Effector position to change to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1d770f32d7ce70df82702f78c59bbb8"></a><!-- doxytag: member="EndEffector::spin_rollers" ref="ab1d770f32d7ce70df82702f78c59bbb8" args="(double spin_spit_speed, double rotate_speed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EndEffector::spin_rollers </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>spin_spit_speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>rotate_speed</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Spin the rollers at different speeds (not just different directions) allowing the <a class="el" href="classGrabber.html">Grabber</a> to rotate and suck in/spit out at the same time</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>spin_spit_speed</em>&nbsp;</td><td>The speed at which to suck in/spit out </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rotate_speed</em>&nbsp;</td><td>The speed at which to rotate the tube </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,7 +342,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>spin_rollers</b> (dou
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Feb 14 2011 18:03:40 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 15 2011 01:17:27 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

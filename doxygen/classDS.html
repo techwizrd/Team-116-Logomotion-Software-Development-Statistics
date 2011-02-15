@@ -73,8 +73,8 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4480e8d757cce850e8136a1c05f07a2"></a><!-- doxytag: member="DS::DS" ref="ad4480e8d757cce850e8136a1c05f07a2" args="(Log *log, Mobility *mobility, EndEffector *end_effector, MinibotDeployment *minibot_deployment, Autonomous *autonomous)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><b>DS</b> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classMobility.html">Mobility</a> *mobility, <a class="el" href="classEndEffector.html">EndEffector</a> *end_effector, <a class="el" href="classMinibotDeployment.html">MinibotDeployment</a> *minibot_deployment, <a class="el" href="classAutonomous.html">Autonomous</a> *autonomous)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71d4558abd56c726246673050a06c81f"></a><!-- doxytag: member="DS::DS" ref="a71d4558abd56c726246673050a06c81f" args="(Log *log, Mobility *mobility, EndEffector *end_effector, Elevator *elevator, MinibotDeployment *minibot_deployment, Autonomous *autonomous)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>DS</b> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classMobility.html">Mobility</a> *mobility, <a class="el" href="classEndEffector.html">EndEffector</a> *end_effector, <a class="el" href="classElevator.html">Elevator</a> *elevator, <a class="el" href="classMinibotDeployment.html">MinibotDeployment</a> *minibot_deployment, <a class="el" href="classAutonomous.html">Autonomous</a> *autonomous)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a5fb1ffe74911fb84aba9f767e17be70b">get_tube_rotate_speed</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#aab26db96a42d3800eb4f1389c8e82b7e">get_tube_suck_spit_speed</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a331cfc63fac9c01bcadd49e3ce6f1014">is_safe_deploy_button</a> ()</td></tr>
@@ -82,7 +82,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a636e646c9036673f1cdf3e0c1e39caa8">set_has_tube_status</a> (bool has_tube)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#a863513abcbc63020e9aa71dc0b9c8986">set_deployment_time_status</a> (bool status)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#ac9df295cb41fd12275658675843c61bc">set_aligned_status</a> (bool is_aligned)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#afa1903e66d7ccda625d320554f8f1de8">execute_macro</a> (int macro)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#af0be69ce8030e8f3251c963851728b72">execute_macro</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDS.html#acdcb1df18b442499a82dc0b78e4f0fd3">process</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
@@ -127,28 +127,21 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="afa1903e66d7ccda625d320554f8f1de8"></a><!-- doxytag: member="DS::execute_macro" ref="afa1903e66d7ccda625d320554f8f1de8" args="(int macro)" -->
+<a class="anchor" id="af0be69ce8030e8f3251c963851728b72"></a><!-- doxytag: member="DS::execute_macro" ref="af0be69ce8030e8f3251c963851728b72" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void DS::execute_macro </td>
           <td>(</td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>macro</em></td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Executes a set of predefined actions</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>macro</em>&nbsp;</td><td>Which macro should be executed </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Executes a set of predefined actions </p>
 
 </div>
 </div>
@@ -339,7 +332,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Feb 14 2011 18:03:40 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Feb 15 2011 01:17:27 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -42,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
@@ -75,6 +76,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a5df64a6f95baf53a486698a8934e9105">shift_to_high_gear</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a54bd0d773bfbb70aa3822b61674cd325">is_in_low_gear</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">CANJaguar *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#aeea9dacbb0b474a7dc87aa72dd93e067">get_motor_controller_instance</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMobility.html#a97ecbff780090469d1eaa3d22d3cf017">process_automatic_shifting</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057a583dc52554545347be0374127959"></a><!-- doxytag: member="Mobility::MOTOR_RPM" ref="a057a583dc52554545347be0374127959" args="" -->
@@ -202,6 +204,24 @@ static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>GEAR_CH
 
 </div>
 </div>
+<a class="anchor" id="a97ecbff780090469d1eaa3d22d3cf017"></a><!-- doxytag: member="Mobility::process_automatic_shifting" ref="a97ecbff780090469d1eaa3d22d3cf017" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mobility::process_automatic_shifting </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Automatically shifts to high gear when the motor speeds for both motors is above GEAR_CHANGE_SPEED. Automatically shifts to low gear when the motor speeds for both motors is below GEAR_CHANGE_SPEED. </p>
+
+</div>
+</div>
 <a class="anchor" id="a7e7da73fbc136f99c014c6a0c2ad5758"></a><!-- doxytag: member="Mobility::set_motor_speed" ref="a7e7da73fbc136f99c014c6a0c2ad5758" args="(RobotSideType side, float speed)" -->
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +312,7 @@ static const float&nbsp;</td><td class="memItemRight" valign="bottom"><b>GEAR_CH
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed Feb 16 2011 22:43:46 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Feb 19 2011 16:21:35 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

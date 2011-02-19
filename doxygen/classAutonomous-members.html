@@ -42,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
@@ -52,8 +53,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 This is the complete list of members for <a class="el" href="classAutonomous.html">Autonomous</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="classAutonomous.html#afab021134496d7066a7e4d3c7d1ea9bb">Autonomous</a>(Log *log,...)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classAutonomous.html#a4529e25bdc7928eb3593c7fa29296577">start</a>()</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classAutonomous.html#a02495e42c785b54a16c0e4a735502c53">Autonomous</a>(Log *log, Navigation *navigation, EndEffector *end_effector, int lane_position, int column, int peg)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classAutonomous.html#a906a5e31314aa96aa38fef8447bc0039">continuous</a>()</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_column</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_end_effector</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_lane_position</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_log</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_navigation</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>m_peg</b> (defined in <a class="el" href="classAutonomous.html">Autonomous</a>)</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classAutonomous.html#ab56d14d645f82b3e1c17ad31ffea90ad">parse</a>()</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classAutonomous.html#a471ac2d2d7ff4cd462458821745721bb">periodic</a>()</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classAutonomous.html#abbb3c67661651d348488672e477a1d04">~Autonomous</a>()</td><td><a class="el" href="classAutonomous.html">Autonomous</a></td><td><code> [virtual]</code></td></tr>
 </table></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -69,7 +79,7 @@ This is the complete list of members for <a class="el" href="classAutonomous.htm
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed Feb 16 2011 22:43:46 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Feb 19 2011 16:21:35 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

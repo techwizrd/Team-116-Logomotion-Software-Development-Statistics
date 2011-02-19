@@ -42,32 +42,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <h1>Autonomous Class Reference</h1>  </div>
 </div>
 <div class="contents">
 <!-- doxytag: class="Autonomous" -->
 <p><code>#include &lt;Autonomous.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Autonomous:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classAutonomous.png" usemap="#Autonomous_map" alt=""/>
+  <map id="Autonomous_map" name="Autonomous_map">
+<area href="classBackupAutonomous.html" alt="BackupAutonomous" shape="rect" coords="0,56,141,80"/>
+<area href="classBrainDeadAutonomous.html" alt="BrainDeadAutonomous" shape="rect" coords="151,56,292,80"/>
+</map>
+</div>
 
 <p><a href="classAutonomous-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#afab021134496d7066a7e4d3c7d1ea9bb">Autonomous</a> (<a class="el" href="classLog.html">Log</a> *log,...)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#a4529e25bdc7928eb3593c7fa29296577">start</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#a02495e42c785b54a16c0e4a735502c53">Autonomous</a> (<a class="el" href="classLog.html">Log</a> *log, <a class="el" href="classNavigation.html">Navigation</a> *navigation, <a class="el" href="classEndEffector.html">EndEffector</a> *end_effector, int lane_position, int column, int peg)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#abbb3c67661651d348488672e477a1d04">~Autonomous</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#ab56d14d645f82b3e1c17ad31ffea90ad">parse</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#a471ac2d2d7ff4cd462458821745721bb">periodic</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAutonomous.html#a906a5e31314aa96aa38fef8447bc0039">continuous</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70c3723770972e028a224402402afe46"></a><!-- doxytag: member="Autonomous::m_lane_position" ref="a70c3723770972e028a224402402afe46" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_lane_position</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa309fe606e480bb02d4443010eeb0e50"></a><!-- doxytag: member="Autonomous::m_column" ref="aa309fe606e480bb02d4443010eeb0e50" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_column</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a408b8fd5a273981f83b309bd68b08c09"></a><!-- doxytag: member="Autonomous::m_peg" ref="a408b8fd5a273981f83b309bd68b08c09" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_peg</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d8b35d3874638ed4089049e578ef5d5"></a><!-- doxytag: member="Autonomous::m_log" ref="a9d8b35d3874638ed4089049e578ef5d5" args="" -->
+<a class="el" href="classLog.html">Log</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_log</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e8f597029e73e50b75ceae84bfe2956"></a><!-- doxytag: member="Autonomous::m_end_effector" ref="a4e8f597029e73e50b75ceae84bfe2956" args="" -->
+<a class="el" href="classEndEffector.html">EndEffector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_end_effector</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6109dfddfc93a4cbe28455f925dab68"></a><!-- doxytag: member="Autonomous::m_navigation" ref="ad6109dfddfc93a4cbe28455f925dab68" args="" -->
+<a class="el" href="classNavigation.html">Navigation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>m_navigation</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The <a class="el" href="classAutonomous.html">Autonomous</a> class executes <a class="el" href="classAutonomous.html">Autonomous</a> plays based on a initial conditions specified by switches on the Robot.</p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Kunal Sarkhel &lt;<a href="mailto:kksarkhel@bluedevs.net">kksarkhel@bluedevs.net</a>&gt; </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afab021134496d7066a7e4d3c7d1ea9bb"></a><!-- doxytag: member="Autonomous::Autonomous" ref="afab021134496d7066a7e4d3c7d1ea9bb" args="(Log *log,...)" -->
+<a class="anchor" id="a02495e42c785b54a16c0e4a735502c53"></a><!-- doxytag: member="Autonomous::Autonomous" ref="a02495e42c785b54a16c0e4a735502c53" args="(Log *log, Navigation *navigation, EndEffector *end_effector, int lane_position, int column, int peg)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -80,8 +109,32 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&nbsp;</td>
-          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classNavigation.html">Navigation</a> *&nbsp;</td>
+          <td class="paramname"> <em>navigation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classEndEffector.html">EndEffector</a> *&nbsp;</td>
+          <td class="paramname"> <em>end_effector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>lane_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>peg</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -103,22 +156,82 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a4529e25bdc7928eb3593c7fa29296577"></a><!-- doxytag: member="Autonomous::start" ref="a4529e25bdc7928eb3593c7fa29296577" args="()" -->
+<a class="anchor" id="abbb3c67661651d348488672e477a1d04"></a><!-- doxytag: member="Autonomous::~Autonomous" ref="abbb3c67661651d348488672e477a1d04" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Autonomous::start </td>
+          <td class="memname">virtual Autonomous::~Autonomous </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
-          <td></td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destructor which should be called by deleting autonomous object in disabledInit() and/or teleopInit() </p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a906a5e31314aa96aa38fef8447bc0039"></a><!-- doxytag: member="Autonomous::continuous" ref="a906a5e31314aa96aa38fef8447bc0039" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Autonomous::continuous </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Called continuously from robot.cpp during autonomous mode. </p>
+
+<p>Reimplemented in <a class="el" href="classBackupAutonomous.html#acef0b062bb5e3ddfbc4308a0557758ee">BackupAutonomous</a>, and <a class="el" href="classBrainDeadAutonomous.html#afed2feb352f74d450291af1f7daad8ed">BrainDeadAutonomous</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab56d14d645f82b3e1c17ad31ffea90ad"></a><!-- doxytag: member="Autonomous::parse" ref="ab56d14d645f82b3e1c17ad31ffea90ad" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Autonomous::parse </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Run the <a class="el" href="classAutonomous.html">Autonomous</a> play selected. </p>
+
+<p>Reimplemented in <a class="el" href="classBackupAutonomous.html#a9b988524eec965fc0fe67ce0e24229ad">BackupAutonomous</a>, and <a class="el" href="classBrainDeadAutonomous.html#af5c4f9ee46e7496927e9071e24390c24">BrainDeadAutonomous</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a471ac2d2d7ff4cd462458821745721bb"></a><!-- doxytag: member="Autonomous::periodic" ref="a471ac2d2d7ff4cd462458821745721bb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Autonomous::periodic </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Called periodically from robot.cpp during autonomous mode. </p>
+
+<p>Reimplemented in <a class="el" href="classBackupAutonomous.html#ac875a42902b773d03501489bf18e4593">BackupAutonomous</a>, and <a class="el" href="classBrainDeadAutonomous.html#a6da45f80df737c1a2fc6915ca0ae144b">BrainDeadAutonomous</a>.</p>
 
 </div>
 </div>
@@ -141,7 +254,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed Feb 16 2011 22:43:46 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Feb 19 2011 16:21:35 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

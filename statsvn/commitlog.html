@@ -21,11 +21,250 @@
 </ul>
 </div><dl class="attributes">
     <dt>Number of Commits:</dt>
-    <dd>162</dd>
+    <dd>174</dd>
     <dt>Number of Active Developers:</dt>
     <dd>10</dd>
 </dl>
 <dl class="commitlist">
+  <dt><a name="174"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-19 15:26</span>
+    <a class="permalink" title="Permalink to this commit" href="#174">#174</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">311</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added automatic shifting code to TeleopPeriodic and AutonomousPeriodic.<br />
+<br />
+I wrote a Mobility::process_automatic_shifting() function that checks the speeds of both motors and shifts accordingly. It runs in TeleopPeriodic and AutonomousPeriodic, so we should not have to modify our code in order to get the automatic shifting ability.
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Mobility.cpp&#160;<span class="change">(+9)</span>,
+        Mobility.h&#160;<span class="change">(+7)</span>,
+        Robot.cpp&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="173"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-19 15:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#173">#173</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">310</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Multiplied the Joystick-&gt;GetY() values by -1 because the Joysticks are giving us negative values for forwards
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        DS.cpp&#160;<span class="change">(+3&#160;-2)</span>,
+        Mobility.cpp&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="172"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-19 14:16</span>
+    <a class="permalink" title="Permalink to this commit" href="#172">#172</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">309</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed all printf() statements in the BackupAutonomous to Log::write() statements
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Autonomous.cpp&#160;<span class="change">(-130)</span>,
+        BackupAutonomous.cpp&#160;<span class="change">(+13&#160;-13)</span>,
+        BackupAutonomous.h&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="171"></a>
+    <a href="user_spencera.html" class="author">spencera</a>
+    <span class="date">2011-02-19 13:41</span>
+    <a class="permalink" title="Permalink to this commit" href="#171">#171</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">308</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Placeholder for truly simple autonomous
+    </p>
+    <p class="commitdetails"><strong>110</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Autonomous.h&#160;<span class="change">(+2&#160;-4)</span>,
+        BrainDeadAutonomous.cpp&#160;<span class="new">(new&#160;42)</span>,
+        BrainDeadAutonomous.h&#160;<span class="new">(new&#160;56)</span>,
+        Robot.cpp&#160;<span class="change">(+10&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="170"></a>
+    <a href="user_spencera.html" class="author">spencera</a>
+    <span class="date">2011-02-17 21:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#170">#170</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">307</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+navigation compiles
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Log.cpp&#160;<span class="change">(+1&#160;-1)</span>,
+        Navigation.cpp&#160;<span class="change">(+11&#160;-9)</span>,
+        Robot.cpp&#160;<span class="change">(+22&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="169"></a>
+    <a href="user_dominicn.html" class="author">dominicn</a>
+    <span class="date">2011-02-17 21:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#169">#169</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">306</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed more.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Navigation.cpp&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="168"></a>
+    <a href="user_dominicn.html" class="author">dominicn</a>
+    <span class="date">2011-02-17 21:30</span>
+    <a class="permalink" title="Permalink to this commit" href="#168">#168</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">305</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Committing to fix compile errors.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Navigation.cpp&#160;<span class="change">(+12&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="167"></a>
+    <a href="user_spencera.html" class="author">spencera</a>
+    <span class="date">2011-02-17 21:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#167">#167</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">304</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+compiles and autonomous can be used in either mode with new functions
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Autonomous.cpp&#160;<span class="change">(+11&#160;-1)</span>,
+        Autonomous.h&#160;<span class="change">(+17&#160;-1)</span>,
+        BackupAutonomous.cpp&#160;<span class="change">(+17&#160;-1)</span>,
+        BackupAutonomous.h&#160;<span class="change">(+17&#160;-2)</span>,
+        Robot.cpp&#160;<span class="change">(+17&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="166"></a>
+    <a href="user_dominicn.html" class="author">dominicn</a>
+    <span class="date">2011-02-17 21:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#166">#166</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">303</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed so that at the end of the drive_straight() function, the motors will stop spinning.<br />
+Made timers to limit the rate at witch the motor speed is checked.
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Navigation.cpp&#160;<span class="change">(+21&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="165"></a>
+    <a href="user_jeffreyl.html" class="author">jeffreyl</a>
+    <span class="date">2011-02-17 20:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#165">#165</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">302</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added fix to navigation. robot now stops after traveling required distance.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Navigation.cpp&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="164"></a>
+    <a href="user_spencera.html" class="author">spencera</a>
+    <span class="date">2011-02-17 20:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#164">#164</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">301</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+compiles and autonomous can be used in either mode
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        Autonomous.cpp&#160;<span class="change">(+6&#160;-1)</span>,
+        Autonomous.h&#160;<span class="change">(+10&#160;-2)</span>,
+        BackupAutonomous.cpp&#160;<span class="change">(+2&#160;-1)</span>,
+        BackupAutonomous.h&#160;<span class="change">(+6&#160;-1)</span>,
+        Robot.cpp&#160;<span class="change">(+13&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="163"></a>
+    <a href="user_kunals.html" class="author">kunals</a>
+    <span class="date">2011-02-17 18:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#163">#163</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">299</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Ported some of my Autonomous code from last year into BackupAutonomous
+    </p>
+    <p class="commitdetails"><strong>196</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        BackupAutonomous.cpp&#160;<span class="new">(new&#160;143)</span>,
+        BackupAutonomous.h&#160;<span class="new">(new&#160;49)</span>,
+        Robot.cpp&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
   <dt><a name="162"></a>
     <a href="user_kunals.html" class="author">kunals</a>
     <span class="date">2011-02-16 19:04</span>

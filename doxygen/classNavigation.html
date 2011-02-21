@@ -67,6 +67,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigation.html#ab4d73dcfdbfbe3d6fd9f8dbb444c48a6">arc</a> (float distance, float degrees, float speed)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigation.html#a294363ae70f7e10b4da02db11349f481">goto_point_relative</a> (float x, float y, float speed)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigation.html#a5634ba283e7c8193ed29a03de9e7d4fd">get_position</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMobility.html">Mobility</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigation.html#a402c0569dd01e0db97c9c4c96fda3570">get_mobility</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The <a class="el" href="classNavigation.html">Navigation</a> subsytem of the robot allows for fine-grained, high-level control over how the robot moves in relation to itself and the field. </p>
@@ -180,6 +181,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a402c0569dd01e0db97c9c4c96fda3570"></a><!-- doxytag: member="Navigation::get_mobility" ref="a402c0569dd01e0db97c9c4c96fda3570" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMobility.html">Mobility</a> * Navigation::get_mobility </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns direct reference to <a class="el" href="classMobility.html">Mobility</a>. Should ideally not have to be used if navigation provided complete set of operations that any form of autonmous might need, but that isn't true yet. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5634ba283e7c8193ed29a03de9e7d4fd"></a><!-- doxytag: member="Navigation::get_position" ref="a5634ba283e7c8193ed29a03de9e7d4fd" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +307,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Feb 19 2011 16:21:35 for Team 116 Logomotion Software by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 20 2011 20:46:31 for Team 116 Logomotion Software by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
